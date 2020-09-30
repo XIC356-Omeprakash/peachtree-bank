@@ -11,7 +11,12 @@ const services: ExternalServices = {};
 const pageModel: Item = {
   name: 'app-container',
   properties: {},
-  children: [],
+  children: [{
+      name: 'product-summary-list-widget-extended',
+      properties: {
+        classId: 'ProductSummaryListWidgetExtendedComponent'
+      }
+    }],
 };
 
 export const environment: Environment = {

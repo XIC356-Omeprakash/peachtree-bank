@@ -9,7 +9,8 @@ import { ProductSummaryListWidgetModule, ProductSummaryWidgetAccountSelectorModu
 import { ContainersModule } from '@backbase/universal-ang/containers';
 import { NavigationSpaWidgetModule } from '@backbase/universal-ang/navigation';
 import { LayoutContainerModule } from '@backbase/universal-ang/layouts';
-import { TransactionsListWidgetModule } from '@backbase/retail-ang/transactions'
+import { TransactionsListWidgetModule } from '@backbase/retail-ang/transactions';
+import { ProductSummaryListWidgetExtendedModule } from '@peachtree/product-summary-list-widget-extended'
 
 
 
@@ -26,7 +27,8 @@ import { TransactionsListWidgetModule } from '@backbase/retail-ang/transactions'
     LayoutContainerModule,
     ProductSummaryWidgetAccountSelectorModule,
     TransactionsListWidgetModule,
-    RouterModule.forRoot([], { initialNavigation: false, useHash: true })
+    RouterModule.forRoot([], { initialNavigation: false, useHash: true }),
+    ProductSummaryListWidgetExtendedModule
   ],
   providers: [...environment.mockProviders || []],
   bootstrap: [AppComponent]
